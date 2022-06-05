@@ -1,12 +1,15 @@
 package Perulangan;
+
 import java.util.Scanner;
+
 public class Latihan {
-	static int jumlahms,nama,npm,matkul,nilai;
+	static int jumlahms, nama, npm, matkul, nilai;
+
 	public static void main(String[]args) {
 		String nama,matkul,keterangan = null;
 		float nilai = 0;
 		int  npm;
-		System.out.println("---------------------------------"
+		System.out.println("-----------------------------"
 				+"\n"+ "Latihan ke-3"
 				+"\n"+ "---------------------------------"
 				+"\n"+"\n"+ "Masukan Jumlah Mahasiswa : "
@@ -40,12 +43,14 @@ public class Latihan {
 		}
 		
 	}
+
 	private static int inputdata() {
 		Scanner inputnew = new Scanner(System.in);
 		int data = inputnew.nextInt();
 		return data;
 	}
 }
+
 public class Tugas3 {
 
 	public static void main(String[] args) {
