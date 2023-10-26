@@ -1,0 +1,19 @@
+package praktikum2;
+import java.util.Scanner;
+
+public class PengkondisianIF {
+	public static void main(String args[]) {
+//		inisialisasi
+		int angka;
+		Scanner input = new Scanner(System.in);
+//		input user
+		System.out.print("Masukkan Angka : ");
+		angka = input.nextInt();
+//		Kondisi IF
+		if(angka > 5) {
+			System.out.println("Angka yang dimasukkan lebih dari 5");
+		} else {
+			System.out.println("Angka yang dimasukkan kurang dari 5");
+		}
+	}
+}

@@ -1,0 +1,8 @@
+package Praktikum_1;
+
+public class TabunganTest {
+	public static void main(String args[]) {
+		Tabungan tabungan = new Tabungan();
+		System.out.print("Saldo awal : "+tabungan.saldo);
+	}
+}

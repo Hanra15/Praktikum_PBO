@@ -1,0 +1,7 @@
+package Praktikum_1;
+
+public class TabunganTest {
+	public static void main(String args[]) {
+		Tabungan tabungan = new Tabungan(50000);
+	}
+}

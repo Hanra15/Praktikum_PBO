@@ -1,0 +1,23 @@
+package praktikum2;
+import java.util.Scanner;
+
+public class PengkondisianSwitch {
+	public static void main(String args[]) {
+//		inisialisasi
+		int angka1, angka2, hasil, perhitungan;
+		Scanner input = new Scanner(System.in);
+//		input user
+		System.out.print("Masukkan Angka 1: ");
+		angka1 = input.nextInt();
+		System.out.print("Masukkan Angka 2: ");
+		angka2 = input.nextInt();
+		System.out.print("List Perhitungan: "
+				+ "\n 1 : pertambahan"
+				+ "\n 2 : pengurangan"
+				+ "\n 3 : perkalian"
+				+ "\n 4 : pembagian"
+				+ "\n Masukkan angka perhitungan : ");
+		perhitungan = input.nextInt();
+//		Kondisi IF
+	}
+}
