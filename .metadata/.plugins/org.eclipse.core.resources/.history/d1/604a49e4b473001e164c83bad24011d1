@@ -14,7 +14,7 @@ public class TestTabungan {
 		System.out.print("Masukkan Saldo penarikan: ");
 		tariktunai = input.nextInt();
 		tabungan.ambilUang(tariktunai);
-		System.out.println("Jumlah uang yang diambil : "+tariktunai);
+		System.out.print("Jumlah uang yang diambil : "+tariktunai);
 		System.out.print("Saldo Sekarang : "+tabungan.saldo);
 		
 	}
