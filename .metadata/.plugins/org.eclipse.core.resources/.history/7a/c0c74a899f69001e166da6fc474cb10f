@@ -1,6 +1,0 @@
-package Praktikum_1;
-
-public class Tabungan {
-	Tabungan tabungan = new Tabungan(5000);
-	System.out.println("Saldo Awal "+tabungan.saldo);
-}
