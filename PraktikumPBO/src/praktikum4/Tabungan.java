@@ -5,7 +5,18 @@ public class Tabungan {
 	public Tabungan(int initsaldo) {
 		saldo = initsaldo;
 	}
-	public void ambilUang(int jumlah) {
-		saldo = saldo - jumlah;
+	public boolean ambilUang(int jumlah) {
+		if(saldo - jumlah < 0) {
+			return false;
+		} else {
+			saldo = saldo - jumlah;	
+			return true;
+		}
+	}
+	public int simpanUang(int jumlah) {
+		return saldo = saldo + jumlah; 
+	}
+	public int getSaldo() {
+		return saldo;
 	}
 }
