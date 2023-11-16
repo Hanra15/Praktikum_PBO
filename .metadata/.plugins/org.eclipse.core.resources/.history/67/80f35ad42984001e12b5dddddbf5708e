@@ -1,0 +1,15 @@
+package praktikum5;
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[]args) {
+		String namaKucing;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Masukkan Nama Kucing : ");
+		namaKucing = input.next();
+		
+		Cat Kucing = new Cat(namaKucing);
+		System.out.println("Kucing "+Kucing.name+" ada di rumah");
+		Kucing.eat();
+	}
+}
