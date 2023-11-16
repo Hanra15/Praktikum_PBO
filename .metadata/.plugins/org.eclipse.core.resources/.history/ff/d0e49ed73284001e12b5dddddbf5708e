@@ -1,0 +1,9 @@
+package praktikum5;
+
+public class Test {
+	public static void main(String []args) {
+		Cat kucingSaya = new Cat();
+		kucingSaya.identitas("Nero");
+		kucingSaya.eat();
+	}
+}
