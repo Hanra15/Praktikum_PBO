@@ -1,0 +1,164 @@
+package praktikum7;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Kalkulator {
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Kalkulator window = new Kalkulator();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Kalkulator() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 468, 391);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(10, 11, 432, 35);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btn_7 = new JButton("7");
+		btn_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_7.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_7.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_7.setBounds(10, 57, 89, 41);
+		frame.getContentPane().add(btn_7);
+		
+		JButton btn_8 = new JButton("8");
+		btn_8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_8.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_8.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_8.setBounds(109, 57, 89, 41);
+		frame.getContentPane().add(btn_8);
+		
+		JButton btn_9 = new JButton("9");
+		btn_9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_9.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_9.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_9.setBounds(208, 57, 89, 41);
+		frame.getContentPane().add(btn_9);
+		
+		JButton btn_6 = new JButton("6");
+		btn_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_6.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_6.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_6.setBounds(208, 102, 89, 41);
+		frame.getContentPane().add(btn_6);
+		
+		JButton btn_4 = new JButton("4");
+		btn_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_4.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_4.setBounds(10, 102, 89, 41);
+		frame.getContentPane().add(btn_4);
+		
+		JButton btn_5 = new JButton("5");
+		btn_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_5.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_5.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_5.setBounds(109, 102, 89, 41);
+		frame.getContentPane().add(btn_5);
+		
+		JButton btn_3 = new JButton("3");
+		btn_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_3.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_3.setBounds(208, 154, 89, 38);
+		frame.getContentPane().add(btn_3);
+		
+		JButton btn_1 = new JButton("1");
+		btn_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_1.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_1.setBounds(10, 154, 89, 38);
+		frame.getContentPane().add(btn_1);
+		
+		JButton btn_2 = new JButton("2");
+		btn_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_2.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_2.setBounds(109, 154, 89, 38);
+		frame.getContentPane().add(btn_2);
+		
+		JButton btn_0 = new JButton("0");
+		btn_0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String Number = textField.getText() + btn_0.getText();
+				textField.setText(Number);
+			}
+		});
+		btn_0.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btn_0.setBounds(109, 203, 89, 41);
+		frame.getContentPane().add(btn_0);
+	}
+}
